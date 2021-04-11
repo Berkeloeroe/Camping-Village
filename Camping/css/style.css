@@ -1,0 +1,268 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+/* text */
+h1 {
+  font-size: 50px;
+  font-family: "Acme", sans-serif;
+  color: #3db4e0;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: "Acme", sans-serif;
+  color: red;
+}
+
+h3 {
+  font-size: 90px;
+  font-family: "Acme", sans-serif;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Acme", sans-serif;
+}
+
+.c {
+  margin-top: 20%;
+}
+
+/* navbar */
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fae661;
+  width: 100%;
+  height: 55px;
+  z-index: 1;
+  box-shadow: 0 6px 6px -8px black;
+}
+
+.nav {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-left: 40%;
+}
+
+.logo {
+  flex: 1 1 auto;
+  margin-right: 70%;
+  position: absolute;
+  /* text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 35px; */
+}
+
+a {
+  font-size: 16px;
+  margin: 15px;
+  color: #3650d6;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  font-family: "Acme", sans-serif;
+}
+
+a:hover {
+  color: white;
+}
+
+img {
+  width: 75%;
+}
+
+/* banner */
+.banner-area {
+  position: relative;
+  /* background-image: url(https://images8.alphacoders.com/414/414699.jpg); */
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slidertext {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+}
+
+/* secties */
+.reserveren,
+.inloggen,
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 700px;
+}
+
+.activiteiten {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 4200px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(244, 244, 244, 1) 100%
+  );
+}
+
+.text-part {
+  width: 65%;
+  height: 80%;
+}
+
+.reserveren {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(244, 244, 244, 1) 100%
+  );
+}
+
+.inloggen {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(244, 244, 244, 1) 100%
+  );
+}
+
+.contact {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(244, 244, 244, 1) 100%
+  );
+}
+
+/* Achtergrond slider */
+#slider {
+  overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+/* form */
+.box {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 22.25%;
+  transform: translate(-50%, -50%);
+  /* background: #191919; */
+  /* text-align: center; */
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type="submit"]:hover {
+  background: #2ecc71;
+}
